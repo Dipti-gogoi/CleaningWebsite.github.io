@@ -1,0 +1,428 @@
+/**************************
+    General Page Style
+**************************/
+
+* { box-sizing: border-box; }
+
+html, body { 
+    width: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+    color: purple;
+    background-color: white;
+    font-size: 20px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+h1 { 
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+h2 {
+    font-size: 1.1rem;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+h4 {
+    padding: 10px; 
+    margin: 0px;
+}
+
+p {
+    padding: 5px 20px 5px 20px;
+    margin: 0px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+a {
+    color: #51A809;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
+    background-color: #51A809;
+    color: white;
+    font-size: 0.75rem;
+    border: 1px black solid;
+    border-radius: 6px;
+    padding: 6px 16px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+button:active, 
+input[type="button"]:active, 
+input[type="submit"]:active, 
+input[type="reset"]:active {
+    background-color: #770777;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.hidden {
+    display: none;   
+}
+
+#mailStatus {
+    display: block;
+    height: 10px;
+    width: 100%;
+}
+
+/**************************
+    Hero Image Style
+**************************/
+
+.hero-image {
+    display: none;
+    background-color: gray;
+    width: 100%;
+    height: 300px;
+}
+
+/******************
+    Menu Style
+*******************/
+
+nav.menu {
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #A32FA3;
+    margin: 0px;
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+}
+
+nav.menu > ul {
+    margin: 0px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav.menu > ul > li {
+    display: inline;
+}
+
+nav > ul > li > a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+nav > ul > li > a > span {
+    display: none;
+}
+.nav_icon{
+    height: 2rem;
+}
+
+.nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+nav.menu img.home {
+    content:url("../images/home.png");
+}
+
+nav.menu img.services {
+    content:url("../images/services.png");
+}
+
+nav.menu img.faq {
+    content:url("../images/faq.png");
+}
+
+nav.menu img.contact {
+    content:url("../images/contact.png");
+}
+
+nav.menu > ul > li > a > span {
+    display: none;
+}
+
+/*******************
+    Logo Style
+********************/
+
+.logo {
+    position: absolute;
+    top: 60px;
+    width: 100vw;
+    text-align: center;
+}
+
+.logo > img {
+    width: 100px;
+    height: 60px;
+    float: left;
+}
+
+/**********************
+    Main Body Style
+***********************/
+
+.content
+{
+    width: 100vw;
+    min-height: 100%;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 25px;
+    margin: 0px auto;
+}
+
+div.divider {
+    min-height: 20px;
+    height: 20px;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Home page contact form */
+form {
+    display: flex;
+}
+
+/* FAQ page bullets */
+img.bullet {
+    height:32px;
+    width: 32px;
+    margin-right: 4px;
+    content:url("../images/bullet.png");
+}
+
+img.bullet-p {
+    height:16px;
+    width: 16px;
+    margin-right: 4px;
+    content:url("../images/bubble.png");
+}
+
+figure[class*="inset-"] {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+figure[class*="inset-"] > img {
+    width: 100%;
+    height: 100%;
+}
+
+figure[class*="inset-"] > cite {
+    font-size: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    display: none;
+}
+
+figure > img.vertical-image {
+    max-width: 333px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+div.contact-form {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div.contact-form > form {
+    border: 3px #A32FA3 solid;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 80vw;
+    height: 400px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.contact-form > form > div.label {
+    padding-right: 20px;
+}
+
+div.contact-form > form > div.label > span {
+    font-size: 0.8rem;
+}
+
+div.contact-form > form > div.control {
+    flex-basis: 100%;
+}
+
+div.contact-form > form > div.control > input[type="text"], 
+div.contact-form > form > div.control > input[type="email"],
+div.contact-form > form > div.control > select,
+div.contact-form > form > div.control > textarea {
+    width: 100%;
+}
+
+div.contact-form > form > div.control > textarea {
+    height: 100px;
+}
+
+div.contact-from > form > div.button {
+    flex-basis: 100%;
+}
+
+div.contact-form > form > div.status {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+div.contact-form > form > div.status > span {
+    font-size: 0.7rem;
+}
+
+div.contact-overlay {
+    border-radius: 10px;
+    margin-left: -23px;
+    margin-top: -33px;
+    width: inherit;
+    height: inherit;
+}
+
+
+div.testimonials {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.testimonials > blockquote {
+    padding: 10px 10px;
+    flex-basis: 100%;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+div.testimonials > blockquote::first-line {
+    font-size: 1rem;
+}
+
+/*********************
+    Overlay/Loading
+**********************/
+
+div.overlay {
+    background-color: rgba(163, 47, 163, 0.5);
+    position:absolute;
+}
+
+div.overlay > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+div.overlay > div > span {
+    color: white;
+}
+
+/*********************
+    Gallery
+**********************/
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+div.gallery > figure{
+    flex-basis: 25%;
+}
+
+div.gallery > figure > h3{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+div.gallery > figure > img{
+    display: block;
+    max-width: 300px;
+}
+
+div.gallery > figure > cite {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    font-size: 0.5rem;
+    display: none;
+}
+
+/************
+    Map
+*************/
+
+div.maps {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+div.maps > iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/*********************
+    Footer Style
+**********************/
+
+
+footer {
+    height: 60px;
+    width: 100%;
+    background-color: #770777;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px;
+}

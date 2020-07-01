@@ -1,0 +1,526 @@
+/**************************    
+     General Page Style
+**************************/
+
+* { box-sizing: border-box; }
+
+html, body { 
+    width: 100%; 
+    margin: 0px; 
+    padding: 0px; 
+    color: purple;
+    background-color: #efefef;
+    font-size: 22px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+}
+
+h1 { 
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+h2 {
+    font-size: 1.1rem;
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+h4 {
+    padding: 10px; 
+    margin: 0px;
+}
+
+p {
+    padding: 5px 30px 5px 30px;
+    margin: 0px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+a {
+    color: #51A809;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* Contact form */
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"] {
+    background-color: #51A809;
+    color: white;
+    font-size: 0.75rem;
+    border: 1px black solid;
+    border-radius: 8px;
+    padding: 8px 18px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+button:active, 
+input[type="button"]:active, 
+input[type="submit"]:active, 
+input[type="reset"]:active {
+    background-color: #770777;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#mailStatus {
+    display: block;
+    height: 10px;
+    width: 100%;
+}
+
+
+/**************************
+    Hero Image Style
+**************************/
+
+.hero-image {
+    max-width: 100%;
+    height: 45vw;
+    overflow: hidden;
+}
+
+.hero-image > div.carousel-container {
+    width: 300%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.hero-image > div.carousel-container > div[class*="carousel-"] {
+    width: 33.33%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-image > div[class*="pos-"] {
+    -webkit-transition: left 1s linear; /* safari */
+    -moz-transition: left 1s linear; /* mozilla */
+    -o-transition: left 1s linear; /* opera */
+    transition: left 1s linear;
+}
+
+.hero-image > div.pos-0 {
+    left: 0%;
+}
+
+.hero-image > div.pos-1 {
+    left: -100%;
+}
+
+.hero-image > div.pos-2 {
+    left: -200%
+}
+
+.hero-image > div.carousel-container > div.carousel-1 {
+    background-image: url(../images/hero-img-1.jpg);
+}
+
+.hero-image > div.carousel-container > div > cite {
+    margin-left: 10px;
+    padding: 0px;
+    font-size: 0.5rem;
+    display: none;
+} 
+
+.hero-image > div.carousel-page > span.active {
+    background-color: #717171;
+}
+
+.hero-caption {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    width: 60vw;
+    min-height: 100px;
+    top: 15vw;
+    left: 20px;
+    padding-left: 120px;
+    display: inline-block;
+    color: black;
+}
+
+.hero-caption > p {
+    color: purple;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.hero-caption > a {
+    font-weight: bold;
+    color: #6DD219;
+}
+
+/******************
+    Menu Style
+*******************/
+
+nav.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #A32FA3;
+    margin: 0px;
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+}
+
+nav.menu > ul {
+    margin: 0px;
+}
+
+nav.menu > ul > li {
+    display: inline;
+    margin: 0px 10px;
+}
+
+nav.menu > ul > li > a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav > ul > li > a:hover {
+    color: #6DD219;
+}
+
+.selected-page {
+    color: #6DD219;
+}
+ .selected-page:hover {
+    color: #51A809;
+ }
+
+.menu-absolute {
+    position: absolute;
+}
+
+
+.menu-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    padding-right: 38px;
+}
+
+.nav-icon{
+    height: 30px;
+    width: 30px;
+}
+
+nav.menu img.home {
+    content:url("../images/home.png");
+}
+
+nav.menu img.services {
+    content:url("../images/services.png");
+}
+
+nav.menu img.faq {
+    content:url("../images/faq.png");
+}
+
+nav.menu img.contact {
+    content:url("../images/contact.png");
+}
+
+/*******************
+    Logo Style
+********************/
+.logo {
+    position: absolute;
+    top: 16vw;
+    left: 20px;
+}
+
+.logo > img {
+    width: 150px;
+    height: 80px;
+}
+
+/**********************
+    Main Body Style
+***********************/
+
+.content
+{
+    width: 90vw;
+    min-height: 100%;
+    background-color: white;
+    margin: 0px auto;
+    padding: 60px 0 25px;
+    border: 1px solid lightgrey;
+}
+
+div.divider {
+    min-height: 20px;
+    height: 20px;
+}
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* FAQ page bullets */
+img.bullet {
+    height:34px;
+    width: 34px;
+    margin-right: 5px;
+    content:url("../images/bullet.png");
+}
+
+img.bullet-p {
+    height:18px;
+    width: 18px;
+    margin-right: 5px;
+    content:url("../images/bubble.png");
+}
+
+figure[class*="inset-"] {
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+figure[class*="inset-"] > img {
+    max-width: 500px;
+    max-height: 333px;
+    width: 100%;
+    height: 100%;
+}
+
+figure[class*="inset-"] > cite {
+    font-size: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+    display: none;
+}
+
+figure > img.vertical-image {
+    max-width: 333px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+div.contact-form {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+div.contact-form > form {
+    border: 3px #A32FA3 solid;
+    border-radius: 10px;
+    padding: 50px 25px;
+    width: 80vw;
+    height: 350px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.contact-form > form > div.label {
+    flex-basis: 40%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+div.contact-form > form > div.label > span {
+    font-size: 0.8rem;
+}
+
+div.contact-form > form > div.control {
+    flex-basis: 60%;
+}
+
+div.contact-form > form > div.control > input[type="text"], 
+div.contact-form > form > div.control > input[type="email"],
+div.contact-form > form > div.control > select,
+div.contact-form > form > div.control > textarea {
+    max-width: 250px;
+    width: 80%;
+}
+
+div.contact-form > form > div.control > textarea {
+    height: 100px;
+}
+
+div.contact-from > form > div.button {
+    flex-basis: 100%;
+}
+
+div.contact-form > form > div.status {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+div.contact-form > form > div.status > span {
+    font-size: 0.7rem;
+}
+
+div.contact-overlay {
+    border-radius: 10px;
+    margin-left: -28px;
+    margin-top: -53px;
+    width: inherit;
+    height: inherit;
+}
+
+div.testimonials {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.testimonials > blockquote {
+    padding: 10px 40px;
+    flex-basis: 100%;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+div.testimonials > blockquote::first-line {
+    font-size: 1rem;
+}
+
+/*********************
+    Overlay/Loading
+**********************/
+
+div.overlay {
+    background-color: rgba(163, 47, 163, 0.5);
+    position:absolute;
+}
+
+div.overlay > div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+}
+
+div.overlay > div > span {
+    color: white;
+}
+
+/*********************
+    Gallery
+**********************/
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+div.gallery > figure{
+    flex-basis: 25%;
+}
+
+div.gallery > figure > h3{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    font-size: 1rem;
+}
+
+div.gallery > figure > img{
+    display: block;
+    max-width: 300px;
+}
+
+div.gallery > figure > cite {
+    text-align: center;
+    display: block;
+    padding: 0px;
+    font-size: 0.5rem;
+    display: none;
+}
+
+/************
+    Map
+*************/
+
+div.maps {
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+div.maps > iframe {
+    width: 70%;
+    height: 550px;
+}
+
+/*********************
+    Footer Style
+**********************/
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #770777;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+/*********************
+    Media Queries
+**********************/
+@media only screen and (max-width: 600px) {
+    nav > ul > li > a > span {
+        display: none;
+    }
+    nav > ul > li > a > img {
+        height: 1.5rem;
+    }
+}

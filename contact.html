@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="cleaning in calgary, professional cleaning service, best home cleaning service, cleaning service">
+    <meta name="description" content="Bubbles Cleaning - Professional Cleaning Service in Calgary">
+    <title>Bubbles Cleaning Contact Us</title>
+    <link rel="icon" type="image/png" href="images/translogo.png" />
+
+    <link media='(min-width:0px) and (max-width:500px)' rel='stylesheet' type='text/css'
+        href='styles/bubbles-small.css'>
+    <link media='(min-width:500px) and (max-width:1200px)' rel='stylesheet' type='text/css'
+        href='styles/bubbles-medium.css'>
+    <link media='(min-width:1200px)' rel='stylesheet' type='text/css' href='styles/bubbles-large.css'>
+</head>
+
+<body>
+    <header id="slide" class="hero-image">
+        <div class="carousel-container pos-0">
+            <div class="carousel-1">
+                <cite>Photo by Aaron Huber on Unsplash</cite>
+            </div>
+            <div class="carousel-2"></div>
+            <div class="carousel-3">
+                <cite>Photo by Nathan Fertig on Unsplash</cite>
+            </div>
+        </div>
+        <div class="carousel-page">
+            <span class="page-0" onclick="carouselPage(0)"></span>
+            <span class="page-1" onclick="carouselPage(1)"></span>
+            <span class="page-2" onclick="carouselPage(2)"></span>
+        </div>
+    </header>
+    <div class="hero-caption">
+        <p>Dirty kitchen? We'll make it sparkle!</p>
+        <a href='#' onclick='gotoContact()'>Contact us for inquiries! >></a>
+    </div>
+    <div class="logo"><img src="images/translogo.png" alt="bubbles"></div>
+    <main>
+        <nav class="menu menu-absolute">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="nav-icon home">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="services.html">
+                        <img class="nav-icon services">
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="faq.html">
+                        <img class="nav-icon faq">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <img class="nav-icon contact">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <article id="content" class="content">
+            <h1>Contact Us</h1>
+            <section>
+                <h2>Send Us Your Concerns</h2>
+                <p>
+                    We'd love to get in touch with you. If you have any questions or concerns, please send us a message.
+                    You can also send us your comments and suggestions to help us improve our services.
+                </p>
+                <p>
+                    Please select as the subject of your message and we will respond to it accordingly.
+                </p>
+                <div class="contact-form">
+                    <form id="contactform" name="contactform" onsubmit="return sendMail()">
+                        <div class="overlay contact-overlay hidden">
+                            <div>
+                                <span>Sending...</span>
+                            </div>
+                        </div>
+                        <div class="label">
+                            <span>Name :</span>
+                        </div>
+                        <div class="control">
+                            <input id="txtName" name="txtName" type="text"><br>
+                        </div>
+                        <div class="label">
+                            <span>Email :</span>
+                        </div>
+                        <div class="control">
+                            <input id="txtEmail" name="txtEmail" type="email"><br>
+                        </div>
+                        <div class="label">
+                            <span>Subject :</span>
+                        </div>
+                        <div class="control">
+                            <select id="selSubject">
+                                <option value="Inquiry">Inquiry</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Employment">Employment</option>
+                            </select>
+                        </div>
+                        <div class="label">
+                            <span>Message :</span>
+                        </div>
+                        <div class="control">
+                            <textarea id="txtMessage" name="txtMessage"></textarea>
+                        </div>
+                        <div class="status">
+                            <button type="reset">Reset</button>
+                            <button type="submit">Send</button>
+                        </div>
+                        <div class="status">
+                            <span id="mailStatus"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <p>
+                    We are waiting for your messages!
+                </p>
+            </section>
+        </article>
+        <footer>
+            Sparkly Bubbles Cleaning Services... We will pop your cleaning worries away!
+        </footer>
+    </main>
+
+    <script src="scripts/bubbles.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>
